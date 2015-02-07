@@ -1,1 +1,1 @@
-Temperature influence on DNA methylation in oysster
+Temperature influence on DNA methylation in oysters
