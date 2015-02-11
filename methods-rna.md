@@ -1,1 +1,3 @@
-#Methods
+#methods-RNAseq
+
+RNA was isolated..

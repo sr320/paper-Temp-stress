@@ -1,9 +1,4 @@
-#Methods-experiment
-
-
-notes     
-
-Sampled 13 oysters for pre-stress epigenetic analyses.  In two plastic tanks filled with 6L, dissolved 300g of MgCl2 in each tank and left oysters in the solution overnight (3/11).  In the morning (3/12) sampled 13 oysters for DNA and RNA.  These tissues were put on dry ice and placed in the -80 freezer until further processing.
+Sampled 13 oysters for pre-stress epigenetic analyses.  In two plastic tanks filled with 6L, dissolved 300g of MgCl2 in each tank and left oysters in the solution overnight (3/11).  In the morning (3/12) sampled 13 oysters for DNA and RNA.  These tissues were put on dry ice and placed in the -80 freezer until further processing. 
 
 Tomorrow will sample the additional 10 oysters left.  I decided to break the sampling up into two days since 23 oysters were too many to process at once.  After anesthetization the oysters only stay open for a minute or two so it would be too difficult to sample all oysters at once.  
 
