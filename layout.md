@@ -1,2 +1,4 @@
-untitled.md
-methods.md
+
+methods-experiment.md     
+methods-array.md     
+methods-rna.md     
