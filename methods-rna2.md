@@ -76,3 +76,6 @@ For Sample 2 enter post and add other three bam files ...
 2) Next, open the **Reference Annotations** section and add a custom reference annotation file using the `merged_with_ref_ids.gtf` file from the cuffmerge output folder. 
 
 3) Click **Launch Analyses** and monitor the status of you job.
+
+
+what the fork

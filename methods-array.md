@@ -7,3 +7,5 @@ A custom DNA tiling array containing 697,753 probes covering 9158 full-length C.
  Samples were labeled using the NimbleGen Dual-Color DNA Labeling Kit and the arrays were processed according to the manufacturer’s recommendations (Roche NimbleGen, Madison, Wisconsin) and imaged at 5um using a GenePix 4000B microarray scanner (Molecular Devices, Sunnyvale, CA).
 
 Raw data from both the Cy3 and Cy5 channels were .........
+
+
