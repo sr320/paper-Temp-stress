@@ -78,4 +78,4 @@ For Sample 2 enter post and add other three bam files ...
 3) Click **Launch Analyses** and monitor the status of you job.
 
 
-what the fork
+what the fork nad back?
