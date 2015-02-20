@@ -78,4 +78,4 @@ These 9 files are available [here](http://owl.fish.washington.edu/halfshell/inde
 2M_3plusmerge_Hypo.bed
 ```
 
-
+IPython notebooks used to get here [are here](http://nbviewer.ipython.org/github/sr320/paper-Temp-stress/tree/master/ipynb/).
