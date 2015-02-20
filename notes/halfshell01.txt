@@ -1,0 +1,61 @@
+Differential Methylation in the Kitchen
+
+Finally re-getting around to examing our MBD-array data in the context of RNA-seq data. Briefly we have three oysters that were heat shocked with samples taken prior to, and following. An MBD-array experiment was carried out where for each oyster we have information on 50bp genome features (selected probes on the array) whether the region was hypomethylated, hypermethylated or did not change.
+
+Following heat shock approximately 10k differentially methylated features (value >/= 1.8) were identified in all oysters.  For all oysters a majority of the features were hypomethylated. Specifically, for oysters #2, #4, and #6 the number of hypomethylated features was 7224, 6560, and 7645, respectively.  When only features were considered where at least 3 adjacent probes were also differentially methylated the number of features (merged) for oysters #2, #4, and #6 was 112, 58, and 62, respectively.  A majority of these features were hypomethylated (108, 48, and 53, respectively)
+
+Oyster | Hypo-methylated | Hyper-methylated | Hypo-3plus-merged | Hypo-3plus-merged
+--- | --- | --- | --- | ---
+2 | 7224 | 2803 | 108 | 4
+4 | 6560 | 3587 | 48 | 10
+6 | 7645 | 4044 | 53 | 9
+
+The files with differentially methylated region (DMRs) as defined by value >/= 1.8 are name as `2014.07.02.6M_sig.bedGraph` and have the following format (ie `head`  output)
+
+```
+track type=bedGraph name="6M_sig" description="6M_sig" visibility=full color=100,100,0 altColor=0,100,200 priority=20
+scaffold1	54599	54654	-1.38187662416007
+scaffold1	162129	162191	1.85685479189849
+scaffold1	163536	163586	-1.15032035523765
+scaffold1	172654	172714	1.33561271440876
+scaffold1	174287	174343	-1.62903936976887
+scaffold1	178075	178128	1.42323539316231
+scaffold1	178685	178740	1.30886296151914
+scaffold1	184271	184330	-1.20699853451878
+scaffold1	184661	184715	-1.61107459826899
+```
+
+As part of the data provided by the core facility we also obtained genome feature files where there were three or more adjacent signficant probes. The naming structure is `2014.07.02.4M_Hypo_3plusAdjactentProbes.gff` with the file format:
+
+```
+scaffold100	804406	804960
+scaffold1018	367127	367319
+scaffold1018	367618	367674
+scaffold1077	401205	401534
+scaffold12	244080	244376
+scaffold1324	356489	356781
+```
+
+To merge these adjacent features I ran `bedtools merge`.  For example 
+
+```
+bedtools merge -d 100 -i \
+./data/2014.07.02.colson/genomeBrowserTracks/threeOrMoreAdjacentSigProbes/2014.07.02.2M_Hypo_3plusAdjactentProbes.gff \
+> ./analyses/2M_3plusmerge_Hypo.gff 
+wc -l ./analyses/2M_3plusmerge_Hypo.gff 
+```
+
+These values are refered to in the above table as Hypo(Hyper)-3plus-merged and the file format:
+
+```
+ scaffold1737	485256	485565
+scaffold1894	222981	223032
+scaffold1894	223601	223653
+scaffold1894	224777	224838
+scaffold392	326519	326818
+scaffold433	204898	205194
+scaffold544	44676	44853
+scaffold544	45028	45086
+scaffold854	353009	353316
+```
+filenames: `6M_3plusmerge_Hypo.bed`
