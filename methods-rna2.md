@@ -2,7 +2,7 @@
 
 
 
-Total RNA was extracted using Tri-Reagent per manufacturer’s instruction. Potential DNA carry-over was removed from extracted RNA using the Turbo DNA-free treatment according to the manufacturer's instructions (Ambion). RNA quality, library preparation, and sequencing was performed by ***GENEWIZ***.  Libraries were prepared using the Illumina TruSeq RNA Sample Preparation kit according to the manufacturer’s protocol (including bar-coding for multiplexing). Samples were multiplexed where three samples were run in one lane for Illumina Hiseq **100 bp paired end sequencing**.
+Total RNA was extracted using Tri-Reagent per manufacturer’s instruction. Potential DNA carry-over was removed from extracted RNA using the Turbo DNA-free treatment according to the manufacturer's instructions (Ambion). RNA quality, library preparation, and sequencing was performed by =.  Libraries were prepared using the Illumina TruSeq RNA Sample Preparation kit according to the manufacturer’s protocol (including bar-coding for multiplexing). Samples were multiplexed where three samples were run in one lane for Illumina Hiseq 100 bp paired end sequencing.
 
 
 RNA-seq analysis was carried out using the TopHat2 suite in the iPlant Collaborative Discovery Environment. Specfically TopHat2-SE was used to align the six libraries (3 individuals, pre and post heat shock)  to the _Crassostrea gigas_ genome. 
