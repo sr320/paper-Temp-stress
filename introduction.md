@@ -1,1 +1,3 @@
-Temperature influence on DNA methylation in oysters
+* DNA Methylation
+* Function in bivalves - MERV
+* Relationship with expression
