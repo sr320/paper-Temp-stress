@@ -1,0 +1,64 @@
+Where are they now?
+
+**tldr**
+![bar](http://eagle.fish.washington.edu/cnidarian/skitch/Screenshot_3_13_15__9_20_AM_1AB34D8C.png)
+
+---
+
+In an effort to find out where heat stress induced differentially methylated loci are in the oyster genome (to ultimately inform on function) I have been using `bedtools` to see where the DMLs lie on the genome. As this was done on an array platform I also felt I need to take into consideration where probes were, noting that they were not randomly distributed across the genome but rather targetted to genes. 
+
+I have determined the proportion of DMLs (n=10028, 10148, 11690) for each oyster that fall within a given genomic feature and compared that to the proporiton of total probes (n=697753) that fall within each genomic feature. For example in just looking at Oyster 2 DMLs and DEGs ... 
+
+```
+!intersectbed \
+-wb \
+-a ./data/2014.07.02.colson/genomeBrowserTracks/logFC_HS-preHS/2014.07.02.2M_sig.bedGraph \
+-b /Users/sr320/data-genomic/tentacle/Cuffdiff_geneexp.sig.gtf \
+| cut -f 6 \
+| sort | uniq -c 
+!intersectbed \
+-wb \
+-a /Users/sr320/git-repos/paper-Temp-stress/ipynb/data/array-design/OID40453_probe_locations.gff \
+-b /Users/sr320/data-genomic/tentacle/Cuffdiff_geneexp.sig.gtf \
+| cut -f 11 \
+| sort | uniq -c 
+```
+output:  
+880 Cufflinks    
+117460 Cufflinks
+
+```
+# Enter the data comparing Oyster 2 then Probes
+obs = array([[880, 10028], [117460, 697753]])
+
+# Calculate the chi-square test
+chi2_corrected = stats.chi2_contingency(obs, correction=True)
+chi2_uncorrected = stats.chi2_contingency(obs, correction=False)
+
+# Print the result
+print('CHI SQUARE')
+print('The corrected chi2 value is {0:5.3f}, with p={1:5.3f}'.format(chi2_corrected[0], chi2_corrected[1]))
+print('The uncorrected chi2 value is {0:5.3f}, with p={1:5.3f}'.format(chi2_uncorrected[0], chi2_uncorrected[1]))
+```
+output: 
+
+CHI SQUARE      
+The corrected chi2 value is 352.138, with p=0.000     
+The uncorrected chi2 value is 352.654, with p=0.000
+
+~ [jupyter notebook](http://nbviewer.ipython.org/github/sr320/paper-Temp-stress/blob/master/ipynb/Array-feature-overlap-04.ipynb)
+
+
+---
+
+To be honest I feel like I am missing some nuance in the analysis, however at this point I believe I will keep pushing through by seeing of the results break out based on whether the DML is hypo or hypermethylated. If you forgot hear is the breakdown.
+
+Oyster | Hypo-methylated | Hyper-methylated | Hypo-3plus-merged | Hypo-3plus-merged
+--- | --- | --- | --- | ---
+2 | 7224 | 2803 | 108 | 4
+4 | 6560 | 3587 | 48 | 10
+6 | 7645 | 4044 | 53 | 9
+
+This also sheds light on the fact that I am currently ignoring clustering (3-plus), something else to put on the list!
+
+
