@@ -1,8 +1,7 @@
 #methods-RNAseq
 
 
-
-Total RNA was extracted using Tri-Reagent per manufacturer’s instruction. Potential DNA carry-over was removed from extracted RNA using the Turbo DNA-free treatment according to the manufacturer's instructions (Ambion). Libraries were prepared using the Illumina TruSeq RNA Sample Preparation kit according to the manufacturer’s protocol (including bar-coding for multiplexing). Samples were multiplexed where three samples were run in one lane for Illumina Hiseq 100 bp paired end sequencing.
+Total RNA was extracted using Tri-Reagent per manufacturer’s instruction. Potential DNA carry-over was removed from extracted RNA using the Turbo DNA-free treatment according to the manufacturer's instructions (Ambion). Messenger RNA (mRNA) enrichment, library preparation, and sequencing was performed by GENEWIZ.  Poly(A) enrichment was performed using NEBNext® Poly(A) mRNA Magnetic Isolation Module (New England Biolabs). Illumina sequencing libraries were prepared with the NEBNext® Ultra™ RNA Library Prep Kit for Illumina® (New England Biolabs) and each library was uniquely barcoded with the NEBNext® Multiplex Oligos for Illumina® (Index Primers Set 1) (New England Biolabs). All six libraries were multiplexed and run on a single lane on a HiSeq2500 (Illumina), with a read length of 100bp (single end).
 
 RNA-seq analysis was carried out using the TopHat2 suite in the iPlant Collaborative Discovery Environment. Specifically TopHat2-SE was used to align the six libraries (3 individuals, pre and post heat shock)  to the _Crassostrea gigas_ genome.  
 
