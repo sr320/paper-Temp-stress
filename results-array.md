@@ -21,14 +21,11 @@ When only features were considered where at least 3 adjacent probes were also di
 
 **Table** - Number of features
 
-Oyster | Hypo-probes | Hyper-probes | Hypo-3plus-merged | Hypo-3plus-merged
+Oyster | Hypo-probes | Hyper-probes | Hypo-3plus-merged | Hyper-3plus-merged
 --- | --- | --- | --- | ---
 2 | 7224 | 2803 | 108 | 4
 4 | 6560 | 3587 | 48 | 10
 6 | 7645 | 4044 | 53 | 9
-
-
-
 
 
 In order to examine regions that were differentially methylated across all three oysters, features were identified where there were at least 3 adjacent probes with significantly differentially methylated. A total of 111 features were identified as hypomethylated and 54 features as hypermethylated when differentially methylated probe with 100bp were merged.  
