@@ -41,7 +41,6 @@ scaffold406 419005  419060  -2
 scaffold406 418360  418767  -2
 scaffold394 555813  556224  -2
 scaffold242 75918   76344   -2
-
 scaffold142 656144  656735  -2
 scaffold12  243960  244376  -2
 scaffold257 1235165 1235481 +2
@@ -64,7 +63,7 @@ Another DMR that is consistent across oysters is located within the intron of [_
 
 ---
 
-Significant hypomethylation is also present within the intron of [Tenascin](http://www.uniprot.org/uniprot/K1PZ30), a glycoprotein expressed in the extracellular matrix during stress.
+Significant hypomethylation is also present within the intron of [_Tenascin_](http://www.uniprot.org/uniprot/K1PZ30), a glycoprotein expressed in the extracellular matrix during stress.
 
 ![scaffold1518_212680](./figures/scaffold1518_212680.png)  
 
@@ -95,3 +94,26 @@ In an another example of a DMR associated with a differentially expressed gene, 
 Another interesting DMR was found in [_Methylated-DNA--protein-cysteine methyltransferase_](http://www.uniprot.org/uniprot/K1RE67). 
 
 ![scaffold242_75918](./figures/scaffold242_75918.png)
+
+---
+
+Within the intron of a [_Nacrein-like protein_](http://www.uniprot.org/uniprot/A0ZSF7) is a hypomethylated DMR.  This is a negative regulator of calcification in shells of mollusks. 
+
+![scaffold142_656144](./figures/scaffold142_656144.png)
+
+
+---
+
+[_Collagen alpha-1(IV) chain_](http://www.uniprot.org/uniprot/P02462) is another gene that contains a hypomethylated DMR. This protein is the major structural component of basement membranes.
+
+![scaffold12_243960](./figures/scaffold12_243960.png)
+
+---
+
+The only DMR that is hypermethylated is odd in the fact that annotation was dropped one the data was integrated into Ensembl. This could be related to the fact that the closest blast hit to this gene model is [_Insertion element IS1 protein insA_](http://www.uniprot.org/uniprot/P19767) and transposable element in prokaryotes.
+
+
+![scaffold257_1235165](./figures/scaffold257_1235165.png)
+
+---
+
