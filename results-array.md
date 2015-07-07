@@ -48,6 +48,22 @@ scaffold257 1235165 1235481 +2
 
 With twelve features hypomethylated and one feature hypermethylated.
 
+## Summary Table
+
+Scaffold		|     Gene     |   I/E/Pro  |  Tandem Repeat | DEG | Generic Gene Methylation | Note
+------------------|--------------|--------------|------------| 
+scaffold481 | Bromodomain-containing protein 8 | I | Yes |  Yes | High
+scaffold247 | Homeobox protein LOX2 | I | No | No | Medium
+scaffold1518 | Tenascin | I | No | No | Low
+scaffold853 |  E3 ubiquitin-protein ligase UHRF1 | Pro | Yes | No | Low
+scaffold406 | Methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial | I  | Yes | No | Low
+scaffold394 | Myosin heavy chain, striated muscle | I/E | No | Yes | Low
+scaffold242 | Methylated-DNA–protein-cysteine methyltransferase | I | No | No | Low | LTR_Pao
+scaffold142 | Nacrein-like protein / Carbonic anhydrase 2 | I | Yes | No | Low | 
+scaffold12 | Collagen alpha–1(IV) chain | I | Yes | No | Medium
+scaffold257 |  Insertion element IS1 protein insA* | ? | No | No | Low
+
+
 Going down the list, _scaffold418_576986_ is a feature that overlaps gene EKC36328, [_Bromodomain-containing protein 8_](http://www.uniprot.org/uniprot/K1QRE8). Specifically the location is in the intron between exon 18 and 19 (total of 20 exons). This gene is differentially expressed, that is expressed at an elevated level following heat shock.
 
 "The precise function of the domain is unclear, but it may be involved in protein-protein interactions and may play a role in assembly or activity of multi-component complexes involved in transcriptional activation [PMID: 7580139]."
@@ -116,4 +132,6 @@ The only DMR that is hypermethylated is odd in the fact that annotation was drop
 ![scaffold257_1235165](./figures/scaffold257_1235165.png)
 
 ---
+
+## Summary Table
 
