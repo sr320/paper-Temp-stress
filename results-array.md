@@ -11,7 +11,12 @@ In direct comparison of methylation for an individual oyster prior to and follow
 
 When only features were considered where at least 3 adjacent probes were also differentially methylated in the same direction the number of features (adjacent probe region merged when within 100bp) for oysters #2, #4, and #6 was 112, 58, and 62, respectively.  A majority of these features were hypomethylated (108, 48, and 53, respectively). Genome feature tracks (bedGraph) for each oysters are available in _genome-feature-tracks_ directory: 
 ```  
-2M_3plusmerge_Hyper.bed2M_3plusmerge_Hypo.bed4M_3plusmerge_Hyper.bed4M_3plusmerge_Hypo.bed6M_3plusmerge_Hyper.bed6M_3plusmerge_Hypo.bed
+2M_3plusmerge_Hyper.bed
+2M_3plusmerge_Hypo.bed
+4M_3plusmerge_Hyper.bed
+4M_3plusmerge_Hypo.bed
+6M_3plusmerge_Hyper.bed
+6M_3plusmerge_Hypo.bed
 ```
 
 ![](./figures/igv-dmr-2.png)
@@ -70,6 +75,8 @@ Going down the list, _scaffold418_576986_ is a feature that overlaps gene EKC363
 
 
 ![scaffold418_576986](./figures/scaffold481_576986.png)
+![scaffold418_576986](https://www.authorea.com/users/3858/articles/18000/master/file/figures/scaffold481_576986.png)
+
 
 ---
 Another DMR that is consistent across oysters is located within the intron of [_Homeobox protein LOX2_](http://www.uniprot.org/uniprot/K1RXD0). Homeobox are transcription factors often associated with developmental processes.
